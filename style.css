@@ -1,0 +1,250 @@
+ /* .carousel slide{
+  font-family: 'Poppins', sans-serif !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important; 
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 100px !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}  */
+
+.card{
+  height: 300px !important;
+}
+.quotes {
+  width: 80vw !important;
+  height: 400px !important;
+  min-height: 400px !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+  z-index: 2 !important;
+}
+
+.quotes .box {
+  position: relative !important;
+  width: 25vw !important;
+  height: 500px !important;
+  /* min-height: 320px !important; */
+  background: #74bdaa !important;
+  overflow: hidden !important;
+  transition: all 0.4s ease-in !important;
+  z-index: 2 !important;
+  box-sizing: border-box !important;
+  padding: 30px !important;
+  box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3) !important;
+}
+
+.quotes .box::before {
+  content: '\201C' !important;
+  position: absolute !important;
+  top: -20px !important;
+  left: 5px !important;
+  width: 100% !important;
+  height: 100% !important;
+  font-size: 120px !important;
+  opacity: 0.2 !important;
+  background: transparent !important;
+  pointer-events: none !important;
+}
+
+.quotes .box::after {
+  content: '\201D' !important;
+  position: absolute !important;
+  height: 500px !important;
+  bottom: -10% !important;
+  right: 5% !important;
+  font-size: 120px !important;
+  opacity: 0.2 !important;
+  background: transparent !important;
+  filter: invert(1) !important;
+  pointer-events: none !important;
+}
+
+.quotes .box p {
+  margin: 0 !important;
+  padding: 10px !important;
+  font-size: 1.2rem !important;
+}
+
+.quotes .box h2 {
+  position: absolute !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  bottom: 10% !important;
+  right: 10% !important;
+  font-size: 1.5rem !important;
+}
+
+.quotes .box:hover {
+  color: #f2f2f2 !important;
+  box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5) !important;
+}
+
+.quotes .bg {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 1 !important;
+  opacity: 0 !important;
+  transition: all 0.5s ease-in !important;
+  pointer-events: none !important;
+  width: 100% !important;
+  height: 300px !important;
+  overflow: hidden !important;
+}
+
+.quotes .box.box1:hover,
+.quotes .box.box1:hover~.bg {
+  opacity: 1 !important;
+  background: #a9e5c7 !important;
+background: -moz-linear-gradient(-45deg, #7fe2b4 15%, #088383 100%) !important;
+background: -webkit-linear-gradient(-45deg, #85c996 15%,#088383 100%) !important;
+background: linear-gradient(135deg, #9fd8a2 15%,#088383 100%) !important;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2a9e5', endColorstr='#2b94e5',GradientType=1 ) !important;
+}
+
+.quotes .box.box2:hover,
+.quotes .box.box2:hover~.bg {
+  opacity: 1 !important;
+  background: #632c65 !important;
+  background: -moz-linear-gradient(-45deg, #7fe2b4 15%, #088383 100%) !important;
+  background: -webkit-linear-gradient(-45deg, #85c996 15%,#088383 100%) !important;
+  background: linear-gradient(135deg, #9fd8a2 15%,#088383 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#632c65', endColorstr='#56a5e2',GradientType=1 ) !important;
+}
+
+.quotes .box.box3:hover,
+.quotes .box.box3:hover~.bg {
+  opacity: 1 !important;
+  background: #3f1d41 !important;
+  background: -moz-linear-gradient(-45deg, #7fe2b4 15%, #008080 100%) !important;
+  background: -webkit-linear-gradient(-45deg, #85c996 15%,#008080 100%) !important;
+  background: linear-gradient(135deg, #9fd8a2 15%,#008080 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b384c', endColorstr='#da5de2',GradientType=1 ) !important;
+}
+.container{
+  /* padding-left: 55px !important; */
+  color: #008080 !important;
+  align-items: center !important;
+  padding-left: 25px !important;
+}
+
+.page-footer{
+  background-color: rgb(29, 116, 75) !important;
+  color: white !important;
+}
+
+
+
+
+
+ team-grid {
+  background-image: linear-gradient(#3F51B5, #1A237E) !important;
+  background-repeat: no-repeat !important;
+  color: #000 !important;
+  overflow-x: hidden !important;
+} 
+/* 
+p {
+  color: #fff
+} */
+
+h2 {
+  font-weight: bold !important;
+  margin-bottom: 40px !important;
+  padding-top: 40px !important;
+  color: #fff
+}
+
+@media (max-width:767px) {
+  h2 {
+      margin-bottom: 25px !important;
+      padding-top: 25px !important;
+      font-size: 24px
+  }
+}
+
+.intro {
+  font-size: 16px !important;
+  max-width: 500px !important;
+  margin: 0 auto
+}
+
+.intro p {
+  margin-bottom: 0
+}
+
+.people {
+  padding: 50px 0 !important;
+  cursor: pointer
+}
+
+.item {
+  margin-bottom: 30px
+}
+
+.item .boxs {
+  text-align: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 280px !important;
+  position: relative !important;
+  overflow: hidden
+}
+
+.item .cover {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-color:rgb(0, 128, 85) !important;
+  transition: opacity 0.15s ease-in !important;
+  opacity: 0.7 !important;
+  padding-top: 80px !important;
+  color: #fff !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15)
+}
+
+.item:hover .cover {
+  opacity: 1
+}
+
+.item .name {
+  font-weight: bold !important;
+  margin-bottom: 8px
+}
+
+.item .title {
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  color: #bbd8fb !important;
+  letter-spacing: 2px !important;
+  font-size: 13px !important;
+  margin-bottom: 20px
+}
+
+.social {
+  font-size: 18px
+}
+
+.social a {
+  color: inherit !important;
+  margin: 0 10px !important;
+  display: inline-block !important;
+  opacity: 0.7
+}
+
+.social a:hover {
+  opacity: 1
+}
+td, p {
+  font: 14px Verdana !important;
+  color:rgb(245, 241, 241) !important;
+}
+
